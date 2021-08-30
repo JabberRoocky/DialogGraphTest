@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Blackboard
   m_EditorClassIdentifier: 
   boolConstrains:
-  - valu: 0
+  - valu: 1
     name: Down
     beschreibung: 
-  - valu: 0
+  - valu: 1
     name: Right
     beschreibung: 
-  - valu: 0
+  - valu: 1
     name: Left
     beschreibung: 
   floatConstrains: []

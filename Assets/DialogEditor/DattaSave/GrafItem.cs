@@ -68,21 +68,26 @@ public class GrafItem : ScriptableObject
     {
         return nodeLinks.Where(x => (x.baseNodeGuid == guid)).First();
     }
-    public bool CheckPath(NodeLinkData nodeLinkData)
+    public bool CheckPath(NodeLinkData nodeLinkData,int i = 0)
     {
-        if (FindDialogNodeData(nodeLinkData.targetNodeGuid) != null)
+        // verhindert Endlos Rekrusion fals ein Path im greis fürt und keinen Dialog beinhaltet i  = max Path länge
+        if(i == 10)
+        {
+            return false;
+        }
+        else if (FindDialogNodeData(nodeLinkData.targetNodeGuid) != null)
         {
             return true;
         }
         else if (FindExecuteNodeData(nodeLinkData.targetNodeGuid) != null)
         {
-            return CheckPath(FindeNextNodeLinkData(nodeLinkData));
+            return CheckPath(FindeNextNodeLinkData(nodeLinkData),i++);
         }
         else if (FindCheckNodeData(nodeLinkData.targetNodeGuid) != null)
         {
             if (ValidateCheckNode(FindCheckNodeData(nodeLinkData.targetNodeGuid)))
             {
-                return CheckPath(FindeNextNodeLinkData(nodeLinkData));
+                return CheckPath(FindeNextNodeLinkData(nodeLinkData),i++);
             }
             else return false;
 
