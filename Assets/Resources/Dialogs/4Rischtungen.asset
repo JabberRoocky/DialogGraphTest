@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e496a94d971dc49b0e6acf9f846144, type: 3}
+  m_Name: 4Rischtungen
+  m_EditorClassIdentifier: 
+  stardNodeGuid: 94ba38c9-a37f-42eb-8daa-315d16afa1fb
+  curendNode:
+    nodeGuid: 
+    position: {x: 0, y: 0}
+    titel: 
+    nodeType: 
+    DE_DialogueText: 
+    EG_DialogueText: 
+  blackboard: {fileID: 11400000, guid: ce74ad632a696bb4b8d80d4c7ddc365b, type: 2}
+  nodeLinks:
+  - baseNodeGuid: 94ba38c9-a37f-42eb-8daa-315d16afa1fb
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+  - baseNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+    DE_Text: Hoch
+    EG_Text: Up
+    targetNodeGuid: ea4528b1-a3fe-4dae-8998-7cacb9fa7eef
+  - baseNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+    DE_Text: Runter
+    EG_Text: Down
+    targetNodeGuid: ef87f784-72c7-4766-ace5-aa5a481c2be9
+  - baseNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+    DE_Text: Rechts
+    EG_Text: Right
+    targetNodeGuid: ec158c6b-c8d7-4b45-b5fd-222dfc444e93
+  - baseNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+    DE_Text: Links
+    EG_Text: Left
+    targetNodeGuid: 518dfc14-188f-4ef3-b7c2-77fb589e3810
+  - baseNodeGuid: ec158c6b-c8d7-4b45-b5fd-222dfc444e93
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: fbbd7289-9ad0-4839-b40f-d76c4708fc32
+  - baseNodeGuid: fbbd7289-9ad0-4839-b40f-d76c4708fc32
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 83ae5565-5f83-40b9-bb26-9b92a3ab991d
+  - baseNodeGuid: 518dfc14-188f-4ef3-b7c2-77fb589e3810
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: bd6e3506-82ac-4d5d-94ef-b6aff578ba2b
+  - baseNodeGuid: 422588ca-3e79-4bfc-ab36-9452adb02c14
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: ef47a869-725d-465f-bdc6-a72129d300ee
+  - baseNodeGuid: ef87f784-72c7-4766-ace5-aa5a481c2be9
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 422588ca-3e79-4bfc-ab36-9452adb02c14
+  - baseNodeGuid: ea4528b1-a3fe-4dae-8998-7cacb9fa7eef
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 1ba1c748-eb81-4f9c-8ba5-26ca8710ff96
+  - baseNodeGuid: 1ba1c748-eb81-4f9c-8ba5-26ca8710ff96
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+  - baseNodeGuid: ef47a869-725d-465f-bdc6-a72129d300ee
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+  - baseNodeGuid: 83ae5565-5f83-40b9-bb26-9b92a3ab991d
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+  - baseNodeGuid: bd6e3506-82ac-4d5d-94ef-b6aff578ba2b
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+  dialogNodeDatas:
+  - nodeGuid: d7edf02c-0556-4e07-addf-516dc246f1b6
+    position: {x: 278, y: 144}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "W\xE4hle eine richtung"
+    EG_DialogueText: Choose a direcktion
+  checkNodeDatas:
+  - nodeGuid: ec158c6b-c8d7-4b45-b5fd-222dfc444e93
+    position: {x: 686, y: 535}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 1
+      name: Right
+      beschreibung: 
+    floatConstrains: []
+    set: 0
+  - nodeGuid: fbbd7289-9ad0-4839-b40f-d76c4708fc32
+    position: {x: 1056, y: 559}
+    titel: Set-Node
+    boolConstrains:
+    - valu: 1
+      name: Left
+      beschreibung: 
+    floatConstrains: []
+    set: 1
+  - nodeGuid: 518dfc14-188f-4ef3-b7c2-77fb589e3810
+    position: {x: 679, y: 742}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 1
+      name: Left
+      beschreibung: 
+    floatConstrains: []
+    set: 0
+  - nodeGuid: 422588ca-3e79-4bfc-ab36-9452adb02c14
+    position: {x: 995, y: 296}
+    titel: Set-Node
+    boolConstrains:
+    - valu: 1
+      name: Right
+      beschreibung: 
+    floatConstrains: []
+    set: 1
+  - nodeGuid: ef87f784-72c7-4766-ace5-aa5a481c2be9
+    position: {x: 632, y: 296}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 1
+      name: Down
+      beschreibung: 
+    floatConstrains: []
+    set: 0
+  - nodeGuid: ea4528b1-a3fe-4dae-8998-7cacb9fa7eef
+    position: {x: 632, y: 50}
+    titel: Set-Node
+    boolConstrains:
+    - valu: 1
+      name: Down
+      beschreibung: 
+    floatConstrains: []
+    set: 1
+  executeNodeDatas:
+  - nodeGuid: 1ba1c748-eb81-4f9c-8ba5-26ca8710ff96
+    position: {x: 1701, y: -167}
+    Event: {fileID: 11400000, guid: f05881ea2f49031469a82316f17a54d7, type: 2}
+    beschreibung: 
+  - nodeGuid: ef47a869-725d-465f-bdc6-a72129d300ee
+    position: {x: 1711, y: 178}
+    Event: {fileID: 11400000, guid: cecf8b36563334c4db061371e2e96f1c, type: 2}
+    beschreibung: 
+  - nodeGuid: 83ae5565-5f83-40b9-bb26-9b92a3ab991d
+    position: {x: 1705, y: 509}
+    Event: {fileID: 11400000, guid: 66dbc9823f19f8643b8a264c8121ffba, type: 2}
+    beschreibung: 
+  - nodeGuid: bd6e3506-82ac-4d5d-94ef-b6aff578ba2b
+    position: {x: 1704, y: 806}
+    Event: {fileID: 11400000, guid: 361fc993024f62b4390f5325435580ca, type: 2}
+    beschreibung: 
