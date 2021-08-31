@@ -37,8 +37,16 @@ MonoBehaviour:
   - baseNodeGuid: 39c06b2c-e59d-40b5-9af1-ad36ec2a3616
     DE_Text: 4+4
     EG_Text: 
-    targetNodeGuid: 55566749-6790-4fc2-a6fd-2ac15040238b
-  - baseNodeGuid: 55566749-6790-4fc2-a6fd-2ac15040238b
+    targetNodeGuid: cbab7e70-8b87-4c81-aff2-9e46af413756
+  - baseNodeGuid: cbab7e70-8b87-4c81-aff2-9e46af413756
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: b5cecebf-f012-46aa-b626-f642febcd571
+  - baseNodeGuid: b5cecebf-f012-46aa-b626-f642febcd571
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: f31421d9-41d4-43f0-9961-408f81ffc140
+  - baseNodeGuid: f31421d9-41d4-43f0-9961-408f81ffc140
     DE_Text: 
     EG_Text: 
     targetNodeGuid: 4fb2615a-c1eb-4653-ad3e-e1d0473012f5
@@ -48,12 +56,6 @@ MonoBehaviour:
     titel: DialogNode
     nodeType: 
     DE_DialogueText: 2
-    EG_DialogueText: 
-  - nodeGuid: 4fb2615a-c1eb-4653-ad3e-e1d0473012f5
-    position: {x: 971, y: 412}
-    titel: DialogNode
-    nodeType: 
-    DE_DialogueText: 8
     EG_DialogueText: 
   - nodeGuid: ca59f131-5de0-4f7b-940d-70e91373c885
     position: {x: 637, y: 210}
@@ -67,9 +69,33 @@ MonoBehaviour:
     nodeType: 
     DE_DialogueText: 
     EG_DialogueText: 
-  checkNodeDatas: []
+  - nodeGuid: 4fb2615a-c1eb-4653-ad3e-e1d0473012f5
+    position: {x: 1705, y: 461}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: 8
+    EG_DialogueText: 
+  checkNodeDatas:
+  - nodeGuid: f31421d9-41d4-43f0-9961-408f81ffc140
+    position: {x: 1303, y: 460}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 0
+      name: Right
+      beschreibung: 
+    floatConstrains: []
+    set: 0
+  - nodeGuid: b5cecebf-f012-46aa-b626-f642febcd571
+    position: {x: 921, y: 458}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 1
+      name: Down
+      beschreibung: 
+    floatConstrains: []
+    set: 0
   executeNodeDatas:
-  - nodeGuid: 55566749-6790-4fc2-a6fd-2ac15040238b
-    position: {x: 633, y: 399}
+  - nodeGuid: cbab7e70-8b87-4c81-aff2-9e46af413756
+    position: {x: 655, y: 459}
     Event: {fileID: 0}
     beschreibung: 

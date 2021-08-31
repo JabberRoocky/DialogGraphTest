@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e496a94d971dc49b0e6acf9f846144, type: 3}
+  m_Name: Test2
+  m_EditorClassIdentifier: 
+  stardNodeGuid: fde86464-74ad-4a6a-91f2-de0b880d6925
+  curendNode:
+    nodeGuid: 
+    position: {x: 0, y: 0}
+    titel: 
+    nodeType: 
+    DE_DialogueText: 
+    EG_DialogueText: 
+  blackboard: {fileID: 11400000, guid: ce74ad632a696bb4b8d80d4c7ddc365b, type: 2}
+  nodeLinks:
+  - baseNodeGuid: fde86464-74ad-4a6a-91f2-de0b880d6925
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 1f598751-edb4-4ef0-ab21-6f09080bb0a6
+  - baseNodeGuid: 1f598751-edb4-4ef0-ab21-6f09080bb0a6
+    DE_Text: Ja Durchaus
+    EG_Text: 
+    targetNodeGuid: 9059a39c-8241-4cec-8428-63b4e69edeaf
+  - baseNodeGuid: 1f598751-edb4-4ef0-ab21-6f09080bb0a6
+    DE_Text: "Es gibt wohl M\xE4ngel Zu beklagen"
+    EG_Text: 
+    targetNodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+  - baseNodeGuid: 1f598751-edb4-4ef0-ab21-6f09080bb0a6
+    DE_Text: Ich habe BereitsAlle 4Rischtungen aktiewirt
+    EG_Text: 
+    targetNodeGuid: de4856ea-d51d-442b-bd83-4ca62cf6e949
+  - baseNodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+    DE_Text: Durschaus
+    EG_Text: 
+    targetNodeGuid: 042e0a06-2221-4d94-90de-068f5688f1e6
+  - baseNodeGuid: de4856ea-d51d-442b-bd83-4ca62cf6e949
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 4840aedd-7ebd-445c-a0d1-cb9d48871e7e
+  - baseNodeGuid: 042e0a06-2221-4d94-90de-068f5688f1e6
+    DE_Text: Ja Das ist Alles
+    EG_Text: 
+    targetNodeGuid: 0353a98b-2440-4cdc-90f1-a5ad6a1dcf3a
+  - baseNodeGuid: 042e0a06-2221-4d94-90de-068f5688f1e6
+    DE_Text: Nicht nur Das
+    EG_Text: 
+    targetNodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+  - baseNodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+    DE_Text: Nicht nur Das
+    EG_Text: 
+    targetNodeGuid: ec264592-de89-4842-b49e-fffee4f7325c
+  - baseNodeGuid: ec264592-de89-4842-b49e-fffee4f7325c
+    DE_Text: 
+    EG_Text: 
+    targetNodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+  - baseNodeGuid: 9059a39c-8241-4cec-8428-63b4e69edeaf
+    DE_Text: Next
+    EG_Text: 
+    targetNodeGuid: 0353a98b-2440-4cdc-90f1-a5ad6a1dcf3a
+  dialogNodeDatas:
+  - nodeGuid: 1f598751-edb4-4ef0-ab21-6f09080bb0a6
+    position: {x: 286, y: 168}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "Ich Hoffe Ihnen Gef\xE4llt Das Projeckt"
+    EG_DialogueText: 
+  - nodeGuid: 38a28557-dfbc-4c54-9825-49a173e26aef
+    position: {x: 901, y: 177}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "Ja Die Strucktorierung des Coods w\xE4hre wohl noch \nVerbesserungs
+      w\xFCrdig!"
+    EG_DialogueText: 
+  - nodeGuid: 9059a39c-8241-4cec-8428-63b4e69edeaf
+    position: {x: 905, y: -18}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "Das Freud mich zu H\xF6ren"
+    EG_DialogueText: 
+  - nodeGuid: 4840aedd-7ebd-445c-a0d1-cb9d48871e7e
+    position: {x: 1338, y: 576}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "Das Freud mich zu H\xF6ren"
+    EG_DialogueText: 
+  - nodeGuid: 0353a98b-2440-4cdc-90f1-a5ad6a1dcf3a
+    position: {x: 1872, y: 24}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: "Einen Sch\xF6nen Tag Noch"
+    EG_DialogueText: 
+  - nodeGuid: 042e0a06-2221-4d94-90de-068f5688f1e6
+    position: {x: 1423, y: 103}
+    titel: DialogNode
+    nodeType: 
+    DE_DialogueText: Aber Wenn Das Alles Ist
+    EG_DialogueText: 
+  checkNodeDatas:
+  - nodeGuid: ec264592-de89-4842-b49e-fffee4f7325c
+    position: {x: 956, y: 416}
+    titel: Check-Node
+    boolConstrains: []
+    floatConstrains: []
+    set: 0
+  - nodeGuid: de4856ea-d51d-442b-bd83-4ca62cf6e949
+    position: {x: 902, y: 571}
+    titel: Check-Node
+    boolConstrains:
+    - valu: 1
+      name: Down
+      beschreibung: 
+    - valu: 1
+      name: Right
+      beschreibung: 
+    - valu: 1
+      name: Left
+      beschreibung: 
+    floatConstrains: []
+    set: 0
+  executeNodeDatas: []
